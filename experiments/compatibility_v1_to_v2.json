@@ -1,0 +1,60 @@
+[
+  {
+    "query_id": "Q1",
+    "query_name": "Search students by department",
+    "collection": "students_v2",
+    "expected_count": 869,
+    "actual_count": 0,
+    "count_match": false,
+    "output_match": false,
+    "missing_fields": [],
+    "status": "BREAKING_CHANGE"
+  },
+  {
+    "query_id": "Q2",
+    "query_name": "Find students with high CGPA",
+    "collection": "students_v2",
+    "expected_count": 1494,
+    "actual_count": 0,
+    "count_match": false,
+    "output_match": false,
+    "missing_fields": [],
+    "status": "BREAKING_CHANGE"
+  },
+  {
+    "query_id": "Q3",
+    "query_name": "Search student by name",
+    "collection": "students_v2",
+    "expected_count": 568,
+    "actual_count": 0,
+    "count_match": false,
+    "output_match": false,
+    "missing_fields": [],
+    "status": "BREAKING_CHANGE"
+  },
+  {
+    "query_id": "Q4",
+    "query_name": "Find student contact details",
+    "collection": "students_v2",
+    "expected_count": 1,
+    "actual_count": 1,
+    "count_match": true,
+    "output_match": false,
+    "missing_fields": [
+      "name",
+      "phone"
+    ],
+    "status": "OUTPUT_MISMATCH"
+  },
+  {
+    "query_id": "Q5",
+    "query_name": "Find approved scholarships",
+    "collection": "scholarships",
+    "expected_count": 502,
+    "actual_count": 502,
+    "count_match": true,
+    "output_match": true,
+    "missing_fields": [],
+    "status": "COMPATIBLE"
+  }
+]

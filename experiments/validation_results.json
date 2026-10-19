@@ -1,0 +1,19 @@
+{
+  "discovery_sample": 200,
+  "held_out_records": 4800,
+  "correct_records": 4800,
+  "missing_records": 0,
+  "record_agreement_percent": 100.0,
+  "field_matches": {
+    "cgpa": 4800,
+    "department": 4800,
+    "name": 4800,
+    "phone": 4800
+  },
+  "field_errors": {
+    "cgpa": 0,
+    "department": 0,
+    "name": 0,
+    "phone": 0
+  }
+}

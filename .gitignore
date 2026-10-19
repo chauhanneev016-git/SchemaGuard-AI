@@ -1,0 +1,42 @@
+﻿# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.vite/
+
+# Frontend Git backup
+frontend/.git.backup/
+
+# VS Code and temporary files
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+
+# Generated ML models
+*.joblib
+*.pkl
+
+# Operating system
+.DS_Store
+Thumbs.db

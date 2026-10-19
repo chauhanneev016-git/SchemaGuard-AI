@@ -1,0 +1,30 @@
+{
+  "S4": {
+    "collection": "students_s4",
+    "description": "Name field relocation",
+    "change": "name to identity.legal_name",
+    "documents": 5000,
+    "affected_documents": 5000
+  },
+  "S5": {
+    "collection": "students_s5",
+    "description": "CGPA type transformation",
+    "change": "float CGPA to string",
+    "documents": 5000,
+    "affected_documents": 5000
+  },
+  "S6": {
+    "collection": "students_s6",
+    "description": "Missing contact data",
+    "change": "remove phones for selected students",
+    "documents": 5000,
+    "affected_documents": 1000
+  },
+  "S7": {
+    "collection": "students_s7",
+    "description": "CGPA value corruption",
+    "change": "modify selected numerical CGPA values",
+    "documents": 5000,
+    "affected_documents": 500
+  }
+}

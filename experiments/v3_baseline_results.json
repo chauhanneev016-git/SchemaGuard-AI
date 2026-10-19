@@ -1,0 +1,59 @@
+{
+  "sample_size": 200,
+  "target_schema": "V3",
+  "mappings": {
+    "department": "academics.branch"
+  },
+  "ambiguous": {},
+  "unmapped": [
+    "cgpa",
+    "name",
+    "phone"
+  ],
+  "held_out_validation": {
+    "department": {
+      "new_field": "academics.branch",
+      "matches": 4800,
+      "total": 4800,
+      "missing": 0,
+      "exact_agreement": 1.0
+    }
+  },
+  "query_results": [
+    {
+      "id": "Q1",
+      "expected": 869,
+      "actual": 869,
+      "fingerprint_match": false,
+      "status": "FAILED"
+    },
+    {
+      "id": "Q2",
+      "expected": 1494,
+      "actual": 0,
+      "fingerprint_match": false,
+      "status": "FAILED"
+    },
+    {
+      "id": "Q3",
+      "expected": 568,
+      "actual": 0,
+      "fingerprint_match": false,
+      "status": "FAILED"
+    },
+    {
+      "id": "Q4",
+      "expected": 1,
+      "actual": 1,
+      "fingerprint_match": false,
+      "status": "FAILED"
+    },
+    {
+      "id": "Q5",
+      "expected": 502,
+      "actual": 502,
+      "fingerprint_match": true,
+      "status": "RESTORED"
+    }
+  ]
+}

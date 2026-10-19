@@ -1,0 +1,76 @@
+{
+  "method": "type_aware_normalized_value_mapping",
+  "discovery_records": 200,
+  "validation_records": 4800,
+  "mappings": {
+    "cgpa": "academics.cgpa",
+    "department": "academics.branch",
+    "name": "profile.full_name",
+    "phone": "contact.mobile"
+  },
+  "discovery": {
+    "cgpa": {
+      "path": "academics.cgpa",
+      "coverage": 1.0,
+      "agreement": 1.0
+    },
+    "department": {
+      "path": "academics.branch",
+      "coverage": 1.0,
+      "agreement": 1.0
+    },
+    "name": {
+      "path": "profile.full_name",
+      "coverage": 1.0,
+      "agreement": 1.0
+    },
+    "phone": {
+      "path": "contact.mobile",
+      "coverage": 0.9,
+      "agreement": 1.0
+    }
+  },
+  "unresolved": {},
+  "held_out_validation": {
+    "cgpa": {
+      "mapped_to": "academics.cgpa",
+      "total": 4800,
+      "available": 4800,
+      "missing": 0,
+      "normalized_matches": 4800,
+      "exact_matches": 3840,
+      "normalized_agreement": 1.0,
+      "exact_agreement": 0.8
+    },
+    "department": {
+      "mapped_to": "academics.branch",
+      "total": 4800,
+      "available": 4800,
+      "missing": 0,
+      "normalized_matches": 4800,
+      "exact_matches": 4800,
+      "normalized_agreement": 1.0,
+      "exact_agreement": 1.0
+    },
+    "name": {
+      "mapped_to": "profile.full_name",
+      "total": 4800,
+      "available": 4800,
+      "missing": 0,
+      "normalized_matches": 4800,
+      "exact_matches": 4114,
+      "normalized_agreement": 1.0,
+      "exact_agreement": 0.8570833333333333
+    },
+    "phone": {
+      "mapped_to": "contact.mobile",
+      "total": 4800,
+      "available": 4320,
+      "missing": 480,
+      "normalized_matches": 4320,
+      "exact_matches": 4320,
+      "normalized_agreement": 0.9,
+      "exact_agreement": 0.9
+    }
+  }
+}

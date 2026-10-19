@@ -1,0 +1,146 @@
+[
+  {
+    "id": "ML_F1_V1",
+    "collection": "ml_1_1",
+    "family": "name_relocation",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F1_V2",
+    "collection": "ml_1_2",
+    "family": "name_relocation",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F1_V3",
+    "collection": "ml_1_3",
+    "family": "name_relocation",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  },
+  {
+    "id": "ML_F2_V1",
+    "collection": "ml_2_1",
+    "family": "cgpa_type_change",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F2_V2",
+    "collection": "ml_2_2",
+    "family": "cgpa_type_change",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F2_V3",
+    "collection": "ml_2_3",
+    "family": "cgpa_type_change",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  },
+  {
+    "id": "ML_F3_V1",
+    "collection": "ml_3_1",
+    "family": "phone_removal",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F3_V2",
+    "collection": "ml_3_2",
+    "family": "phone_removal",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F3_V3",
+    "collection": "ml_3_3",
+    "family": "phone_removal",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  },
+  {
+    "id": "ML_F4_V1",
+    "collection": "ml_4_1",
+    "family": "cgpa_corruption",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F4_V2",
+    "collection": "ml_4_2",
+    "family": "cgpa_corruption",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F4_V3",
+    "collection": "ml_4_3",
+    "family": "cgpa_corruption",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  },
+  {
+    "id": "ML_F5_V1",
+    "collection": "ml_5_1",
+    "family": "department_change",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F5_V2",
+    "collection": "ml_5_2",
+    "family": "department_change",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F5_V3",
+    "collection": "ml_5_3",
+    "family": "department_change",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  },
+  {
+    "id": "ML_F6_V1",
+    "collection": "ml_6_1",
+    "family": "mixed_type_and_missing",
+    "rate": 0.1,
+    "total_documents": 5000,
+    "changed_documents": 500
+  },
+  {
+    "id": "ML_F6_V2",
+    "collection": "ml_6_2",
+    "family": "mixed_type_and_missing",
+    "rate": 0.3,
+    "total_documents": 5000,
+    "changed_documents": 1500
+  },
+  {
+    "id": "ML_F6_V3",
+    "collection": "ml_6_3",
+    "family": "mixed_type_and_missing",
+    "rate": 0.6,
+    "total_documents": 5000,
+    "changed_documents": 3000
+  }
+]

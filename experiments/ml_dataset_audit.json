@@ -1,0 +1,42 @@
+{
+  "total_evaluations": 400,
+  "scenario_count": 4,
+  "unique_query_definitions": 84,
+  "duplicate_query_groups": [
+    [
+      "W081",
+      "W085",
+      "W089",
+      "W093",
+      "W097"
+    ],
+    [
+      "W082",
+      "W086",
+      "W090",
+      "W094",
+      "W098"
+    ],
+    [
+      "W083",
+      "W087",
+      "W091",
+      "W095",
+      "W099"
+    ],
+    [
+      "W084",
+      "W088",
+      "W092",
+      "W096",
+      "W100"
+    ]
+  ],
+  "class_distribution": {
+    "EXACT_MATCH": 356,
+    "SEMANTIC_MATCH": 20,
+    "REVIEW_REQUIRED": 24
+  },
+  "majority_baseline_accuracy": 0.94,
+  "recommendation": "Expand independent migration families and use scenario-grouped train/test evaluation."
+}

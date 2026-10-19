@@ -1,0 +1,98 @@
+{
+  "method": "paired_document_value_matching",
+  "sample_size": 200,
+  "field_mappings": {
+    "cgpa": "academics.cgpa",
+    "department": "academics.branch",
+    "name": "profile.full_name",
+    "phone": "contact.mobile"
+  },
+  "mapping_sample_confidence": {
+    "cgpa": 1.0,
+    "department": 1.0,
+    "name": 1.0,
+    "phone": 1.0
+  },
+  "query_results": [
+    {
+      "query_id": "Q1",
+      "original_filter": {
+        "department": "ECE"
+      },
+      "repaired_filter": {
+        "academics.branch": "ECE"
+      },
+      "expected_count": 869,
+      "actual_count": 869,
+      "fingerprint_match": true,
+      "missing_fields": [],
+      "status": "RESTORED"
+    },
+    {
+      "query_id": "Q2",
+      "original_filter": {
+        "cgpa": {
+          "$gte": 8.5
+        }
+      },
+      "repaired_filter": {
+        "academics.cgpa": {
+          "$gte": 8.5
+        }
+      },
+      "expected_count": 1494,
+      "actual_count": 1494,
+      "fingerprint_match": true,
+      "missing_fields": [],
+      "status": "RESTORED"
+    },
+    {
+      "query_id": "Q3",
+      "original_filter": {
+        "name": {
+          "$regex": "^A",
+          "$options": "i"
+        }
+      },
+      "repaired_filter": {
+        "profile.full_name": {
+          "$regex": "^A",
+          "$options": "i"
+        }
+      },
+      "expected_count": 568,
+      "actual_count": 568,
+      "fingerprint_match": true,
+      "missing_fields": [],
+      "status": "RESTORED"
+    },
+    {
+      "query_id": "Q4",
+      "original_filter": {
+        "student_id": 101
+      },
+      "repaired_filter": {
+        "student_id": 101
+      },
+      "expected_count": 1,
+      "actual_count": 1,
+      "fingerprint_match": true,
+      "missing_fields": [],
+      "status": "RESTORED"
+    },
+    {
+      "query_id": "Q5",
+      "original_filter": {
+        "approved": true
+      },
+      "repaired_filter": {
+        "approved": true
+      },
+      "expected_count": 502,
+      "actual_count": 502,
+      "fingerprint_match": true,
+      "missing_fields": [],
+      "status": "RESTORED"
+    }
+  ]
+}

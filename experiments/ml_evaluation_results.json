@@ -1,0 +1,197 @@
+{
+  "evaluation": "leave_one_migration_family_out",
+  "feature_names": [
+    "is_student_query",
+    "filter_field_count",
+    "projection_field_count",
+    "uses_name",
+    "uses_phone",
+    "uses_cgpa",
+    "uses_department",
+    "filter_missing_rate",
+    "projection_missing_rate",
+    "filter_type_change_rate",
+    "projection_type_change_rate",
+    "filter_value_change_rate",
+    "projection_value_change_rate"
+  ],
+  "family_count": 6,
+  "overall": {
+    "Logistic Regression": {
+      "accuracy": 0.9261111111111111,
+      "precision": 0.55,
+      "recall": 0.7806451612903226,
+      "f1": 0.6453333333333333,
+      "TN": 1546,
+      "FP": 99,
+      "FN": 34,
+      "TP": 121
+    },
+    "Random Forest": {
+      "accuracy": 0.8894444444444445,
+      "precision": 0.34285714285714286,
+      "recall": 0.3096774193548387,
+      "f1": 0.3254237288135593,
+      "TN": 1553,
+      "FP": 92,
+      "FN": 107,
+      "TP": 48
+    },
+    "Majority Baseline": {
+      "accuracy": 0.9138888888888889,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 1645,
+      "FP": 0,
+      "FN": 155,
+      "TP": 0
+    }
+  },
+  "per_family": [
+    {
+      "family": "cgpa_corruption",
+      "model": "Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "TP": 60
+    },
+    {
+      "family": "cgpa_corruption",
+      "model": "Random Forest",
+      "accuracy": 0.8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 240,
+      "FP": 0,
+      "FN": 60,
+      "TP": 0
+    },
+    {
+      "family": "cgpa_type_change",
+      "model": "Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 300,
+      "FP": 0,
+      "FN": 0,
+      "TP": 0
+    },
+    {
+      "family": "cgpa_type_change",
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 300,
+      "FP": 0,
+      "FN": 0,
+      "TP": 0
+    },
+    {
+      "family": "department_change",
+      "model": "Logistic Regression",
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "TN": 240,
+      "FP": 0,
+      "FN": 20,
+      "TP": 40
+    },
+    {
+      "family": "department_change",
+      "model": "Random Forest",
+      "accuracy": 0.8666666666666667,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5,
+      "TN": 240,
+      "FP": 0,
+      "FN": 40,
+      "TP": 20
+    },
+    {
+      "family": "mixed_type_and_missing",
+      "model": "Logistic Regression",
+      "accuracy": 0.95,
+      "precision": 0.6,
+      "recall": 0.631578947368421,
+      "f1": 0.6153846153846154,
+      "TN": 273,
+      "FP": 8,
+      "FN": 7,
+      "TP": 12
+    },
+    {
+      "family": "mixed_type_and_missing",
+      "model": "Random Forest",
+      "accuracy": 0.8633333333333333,
+      "precision": 0.31666666666666665,
+      "recall": 1.0,
+      "f1": 0.4810126582278481,
+      "TN": 240,
+      "FP": 41,
+      "FN": 0,
+      "TP": 19
+    },
+    {
+      "family": "name_relocation",
+      "model": "Logistic Regression",
+      "accuracy": 0.7333333333333333,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 220,
+      "FP": 80,
+      "FN": 0,
+      "TP": 0
+    },
+    {
+      "family": "name_relocation",
+      "model": "Random Forest",
+      "accuracy": 0.8666666666666667,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "TN": 260,
+      "FP": 40,
+      "FN": 0,
+      "TP": 0
+    },
+    {
+      "family": "phone_removal",
+      "model": "Logistic Regression",
+      "accuracy": 0.94,
+      "precision": 0.45,
+      "recall": 0.5625,
+      "f1": 0.5,
+      "TN": 273,
+      "FP": 11,
+      "FN": 7,
+      "TP": 9
+    },
+    {
+      "family": "phone_removal",
+      "model": "Random Forest",
+      "accuracy": 0.94,
+      "precision": 0.45,
+      "recall": 0.5625,
+      "f1": 0.5,
+      "TN": 273,
+      "FP": 11,
+      "FN": 7,
+      "TP": 9
+    }
+  ]
+}

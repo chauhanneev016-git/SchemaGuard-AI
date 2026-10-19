@@ -1,0 +1,45 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.vite/
+
+# Git backup from frontend
+frontend/.git.backup/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Generated machine learning models
+*.joblib
+*.pkl
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

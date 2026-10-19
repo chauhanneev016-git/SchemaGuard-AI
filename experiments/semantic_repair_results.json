@@ -1,0 +1,104 @@
+{
+  "target_schema": "V3",
+  "method": "registered_query_semantic_validation",
+  "supported_queries": 5,
+  "results": [
+    {
+      "query_id": "Q1",
+      "query_name": "Search students by department",
+      "collection": "students_v3",
+      "filter": {
+        "academics.branch": "ECE"
+      },
+      "expected_count": 869,
+      "actual_count": 869,
+      "exact_match": false,
+      "semantic_match": true,
+      "missing_field_rows": 0,
+      "missing_details_sample": [],
+      "status": "SEMANTIC_MATCH"
+    },
+    {
+      "query_id": "Q2",
+      "query_name": "Find students with high CGPA",
+      "collection": "students_v3",
+      "filter": {
+        "$expr": {
+          "$gte": [
+            {
+              "$convert": {
+                "input": "$academics.cgpa",
+                "to": "double",
+                "onError": null,
+                "onNull": null
+              }
+            },
+            8.5
+          ]
+        }
+      },
+      "expected_count": 1494,
+      "actual_count": 1494,
+      "exact_match": false,
+      "semantic_match": true,
+      "missing_field_rows": 0,
+      "missing_details_sample": [],
+      "status": "SEMANTIC_MATCH"
+    },
+    {
+      "query_id": "Q3",
+      "query_name": "Search student by name",
+      "collection": "students_v3",
+      "filter": {
+        "profile.full_name": {
+          "$regex": "^A",
+          "$options": "i"
+        }
+      },
+      "expected_count": 568,
+      "actual_count": 568,
+      "exact_match": false,
+      "semantic_match": true,
+      "missing_field_rows": 0,
+      "missing_details_sample": [],
+      "status": "SEMANTIC_MATCH"
+    },
+    {
+      "query_id": "Q4",
+      "query_name": "Find student contact details",
+      "collection": "students_v3",
+      "filter": {
+        "student_id": 101
+      },
+      "expected_count": 1,
+      "actual_count": 1,
+      "exact_match": false,
+      "semantic_match": false,
+      "missing_field_rows": 1,
+      "missing_details_sample": [
+        {
+          "row": 0,
+          "missing_fields": [
+            "phone"
+          ]
+        }
+      ],
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "query_id": "Q5",
+      "query_name": "Find approved scholarships",
+      "collection": "scholarships",
+      "filter": {
+        "approved": true
+      },
+      "expected_count": 502,
+      "actual_count": 502,
+      "exact_match": true,
+      "semantic_match": true,
+      "missing_field_rows": 0,
+      "missing_details_sample": [],
+      "status": "EXACT_MATCH"
+    }
+  ]
+}
